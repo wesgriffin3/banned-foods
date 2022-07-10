@@ -1,0 +1,19 @@
+.box {
+  background-color: black;
+  height: 80vh;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#food-name {
+  color: white;
+  padding-top: 10px;
+}
+
+#food-img {
+}
+
+#ingredients {
+  margin-top: 30px;
+  color: white;
+}
