@@ -1,12 +1,16 @@
+.form {
+  margin-left: 25%;
+  margin-top: 50%;
+}
+
 .box {
-  background-color: black;
   height: 80vh;
   text-align: center;
   margin-top: 10px;
 }
 
 #food-name {
-  color: white;
+  color: black;
   padding-top: 10px;
 }
 
@@ -15,7 +19,7 @@
 
 #ingredients {
   margin-top: 30px;
-  color: white;
+  color: black;
 }
 
 .red {

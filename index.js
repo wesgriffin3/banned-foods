@@ -8,17 +8,16 @@ form.submit(function () {
       "&addProductInformation=true"
   );
 
+  $("form").remove();
+
   productRequest.done(function (data) {
     console.log(data.products[0].ingredientList);
-    // console.log(data.products[0].image);
-    // console.log(data.products[0].ingredientList);
+
+    const title = document.getElementById("food-name");
+    title.innerHTML = data.products[0].title;
     //
-    // const title = document.getElementById("food-name");
-    // title.innerHTML = data.products[0].title;
-    // //
-    // const image = document.getElementById("food-image");
-    // image.src = data.products[0].image;
-    //
+    const image = document.getElementById("food-image");
+    image.src = data.products[0].image;
 
     const ingredients = document.getElementById("ingredients");
     ingredients.innerHTML = data.products[0].ingredientList;
