@@ -9,7 +9,7 @@ form.submit(function () {
   );
 
   productRequest.done(function (data) {
-    // console.log(data.products[0].title);
+    console.log(data.products[0].ingredientList);
     // console.log(data.products[0].image);
     // console.log(data.products[0].ingredientList);
     //
@@ -19,14 +19,18 @@ form.submit(function () {
     // const image = document.getElementById("food-image");
     // image.src = data.products[0].image;
     //
+
     const ingredients = document.getElementById("ingredients");
     ingredients.innerHTML = data.products[0].ingredientList;
 
-    console.log(data.products[0].ingredientList.includes("REDUCED IRON"));
+    const array1 = data.products[0].ingredientList;
+    const array2 = "REDUCED IRON";
 
-    if (data.products[0].ingredientList.includes("REDUCED IRON")) {
-      alert("you probably shouldnt eat this");
+    if (array1.toUpperCase().includes(array2)) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
     }
+
+    console.log("this food contains " + array1.toUpperCase().includes(array2));
   });
 });
 
