@@ -22,14 +22,51 @@ form.submit(function () {
     const ingredients = document.getElementById("ingredients");
     ingredients.innerHTML = data.products[0].ingredientList;
 
-    const array1 = data.products[0].ingredientList;
-    const array2 = "REDUCED IRON";
+    const array1 = data.products[0].ingredientList.toUpperCase();
 
-    if (array1.toUpperCase().includes(array2)) {
+    if (array1.includes("BLUE 1")) {
       alert("this food is banned outside of the united states. bit weird, ay?");
     }
 
-    console.log("this food contains " + array1.toUpperCase().includes(array2));
+    if (array1.includes("BLUE 2")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("YELLOW 5")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("Brominated vegetable oil")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("Bromated flour")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("Olean")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("BHA")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("BHT")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("rBGH")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("rBST")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("Arsenic")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
   });
 });
 
