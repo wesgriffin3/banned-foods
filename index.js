@@ -8,8 +8,6 @@ form.submit(function () {
       "&addProductInformation=true"
   );
 
-  $("form").remove();
-
   productRequest.done(function (data) {
     console.log(data.products[0].ingredientList);
 
