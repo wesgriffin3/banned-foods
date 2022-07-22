@@ -2,13 +2,6 @@
   text-align: center;
 }
 
-.title {
-  padding-top: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
 .form {
   margin-top: 25px;
   display: flex;
@@ -44,4 +37,16 @@ button {
 
 .banned-ingredients {
   margin-top: 20px;
+}
+
+.page2 {
+  text-align: center;
+}
+
+h5 {
+  padding-top: 10px;
+}
+
+li {
+  list-style: none;
 }
