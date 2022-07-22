@@ -9,13 +9,15 @@ form.submit(function () {
   );
 
   productRequest.done(function (data) {
-    console.log(data.products[0].ingredientList);
+    console.log(data);
 
     const title = document.getElementById("food-name");
     title.innerHTML = data.products[0].title;
     //
     const image = document.getElementById("food-image");
     image.src = data.products[0].image;
+
+    // ingredients
 
     const ingredients = document.getElementById("ingredients");
     ingredients.innerHTML = data.products[0].ingredientList;
@@ -31,6 +33,10 @@ form.submit(function () {
     }
 
     if (array1.includes("YELLOW 5")) {
+      alert("this food is banned outside of the united states. bit weird, ay?");
+    }
+
+    if (array1.includes("RED 40")) {
       alert("this food is banned outside of the united states. bit weird, ay?");
     }
 
